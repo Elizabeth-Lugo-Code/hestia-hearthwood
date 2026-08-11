@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "Blood Memory",
+    "genre": "Vampire Romantasy",
+    "status": "In Progress — Currently Revising",
+    "cover": "assets/images/blood-memory-cover.jpg"
+  },
+  "blurb": {
+    "paragraphs": [
+        "Evelynn spent most of her life serving others, never the one in charge - just a pawn in someone else's game. Until she woke up in the middle of a centuries-old succession war that shouldn't exist.",
+        "She may not remember who she was in her past life, but her blood does, and it's stronger than she ever could have imagined.",
+        "When Dymir finds the long lost queen, she's not quite who he was expecting. But the undeniable pull between his blood and the memories in hers is unmistakable.",
+        "Evelynn needs allies - and Dymir needs her to remember who she was, and who she could have been, had things gone differently in her old life. But the more she remembers, the more dangerous it becomes for both of them.",
+        "A slow-burn romantasy of reincarnation, primordial magic, and a love that has already ended once before."
+    ]
+  },
+  "details": {
+    "tropes": ["Reincarnation", "Forbidden bond", "Slow burn", "Court politics", "Primordial magic"]
+  },
+  "cta": {
+    "label": "Follow the progress",
+    "href": "updates.html"
+  }
+}

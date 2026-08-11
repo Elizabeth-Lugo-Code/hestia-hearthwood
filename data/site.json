@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "title": "Hestia Hearthwood | Author",
+    "description": "Romantasy and speculative fiction by Hestia Hearthwood."
+  },
+  "business": {
+    "name": "Hestia Hearthwood",
+    "email": "norcross.beth@gmail.com",
+    "socialMedia": {}
+  },
+  "nav": [
+    { "label": "Home", "href": "index.html", "page": "home" },
+    { "label": "Blood Memory", "href": "blood-memory.html", "page": "blood-memory" },
+    { "label": "Roots Remember", "href": "roots-remember.html", "page": "roots-remember" },
+    { "label": "Updates", "href": "updates.html", "page": "updates" },
+    { "label": "About", "href": "about.html", "page": "about" },
+    { "label": "Contact", "href": "contact.html", "page": "contact" }
+  ],
+  "footer": {
+    "copyrightName": "Hestia Hearthwood"
+  }
+}

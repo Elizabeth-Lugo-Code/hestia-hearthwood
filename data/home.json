@@ -1,0 +1,27 @@
+{
+  "intro": {
+    "headline": "Welcome to the Hearth",
+    "sub": "I'm Hestia Hearthwood. Pull up a chair, settle in, and let me tell you a story."
+  },
+  "books": [
+    {
+      "title": "Blood Memory",
+      "tagline": "A reincarnated heroine, a centuries-old succession conflict, and a compulsion she's only beginning to understand.",
+      "status": "In progress",
+      "accent": "burgundy",
+      "link": "blood-memory.html"
+    },
+    {
+      "title": "What the Roots Remember",
+      "tagline": "A colonized world, bloodline-bound powers, and a story still taking root.",
+      "status": "Early development",
+      "accent": "roots",
+      "link": "roots-remember.html"
+    }
+  ],
+  "aboutTeaser": {
+    "headline": "The Person Behind the Pen Name",
+    "sub": "Developer by day, storyteller by candlelight.",
+    "cta": { "label": "Meet Hestia", "href": "about.html" }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "What the Roots Remember",
+    "genre": "Science Fantasy",
+    "status": "Early Development",
+    "cover": "assets/images/roots-remember-cover.jpg"
+  },
+  "blurb": {
+    "hooks": [
+      "The wealth gap was supposed to end when the planetary habitation efforts started — instead, the gap only got wider.",
+      "Millennia after habitation efforts permanently altered the direction of humanity's evolution, it must decide whether to abandon its roots, or grow in spite of them.",
+      "Genna's family represents one of humanity's last remaining connections to its planetary origins. They must decide if the connection is worth the cost, even as the price continues to grow."
+    ]
+  },
+  "details": {
+    "themes": ["Colonization", "Class & Inequality", "Bloodline Magic", "Found Family", "Nature vs. Control"]
+  },
+  "cta": {
+    "label": "Follow the progress",
+    "href": "updates.html"
+  }
+}
