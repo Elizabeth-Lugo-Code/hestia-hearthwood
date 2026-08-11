@@ -1,0 +1,526 @@
+/* ============================================================
+   FONTS
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Lora:wght@400;500;600&display=swap');
+
+
+/* ============================================================
+   1. GLOBAL VARIABLES
+   ============================================================ */
+:root {
+  --color-ink: #1f1712;
+  --color-parchment: #f4ecda;
+  --color-parchment-dim: #e8dcc0;
+  --color-gold: #b08d57;
+  --color-gold-light: #c9a96e;
+  --color-burgundy: #6b1f2a;
+  --color-burgundy-dark: #4e161e;
+  --color-roots: #7fae4d;
+  --color-roots-dark: #5e8a35;
+  --color-roots-accent: #f2f2ec;
+  --color-muted: #7a6a5c;
+
+  --font-heading: 'Fraunces', serif;
+  --font-body: 'Lora', serif;
+}
+
+
+/* ============================================================
+   2. RESET + BASE ELEMENTS
+   ============================================================ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: var(--color-ink);
+  background-color: var(--color-parchment);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================================================
+   3. NAV
+   ============================================================ */
+header {
+  background-color: var(--color-ink);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--color-parchment);
+}
+
+.candle-icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.75rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-parchment);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-parchment);
+  border-radius: 2px;
+}
+
+
+/* ============================================================
+   4. FOOTER
+   ============================================================ */
+footer {
+  background-color: var(--color-ink);
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-content p {
+  color: var(--color-parchment-dim);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--color-gold-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--color-parchment);
+}
+
+
+/* ============================================================
+   5. BUTTONS + CTAs
+   ============================================================ */
+.btn {
+  display: inline-block;
+  background-color: var(--color-gold);
+  color: var(--color-ink);
+  padding: 0.7rem 1.75rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+  background-color: var(--color-gold-light);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-burgundy {
+  background-color: var(--color-burgundy);
+  color: var(--color-parchment);
+}
+
+.btn-burgundy:hover {
+  background-color: var(--color-burgundy-dark);
+}
+
+.btn-roots {
+  background-color: var(--color-roots);
+  color: var(--color-ink);
+  border: 1.5px solid var(--color-roots-accent);
+}
+
+.btn-roots:hover {
+  background-color: var(--color-roots-dark);
+}
+
+.btn-disabled {
+  background-color: var(--color-muted);
+  color: var(--color-parchment);
+  cursor: default;
+}
+
+.btn-disabled:hover {
+  background-color: var(--color-muted);
+  text-decoration: none;
+  transform: none;
+}
+
+
+/* ============================================================
+   6. SHARED PAGE INTRO / BODY SPACING
+   Same split pattern from the dev site: intro pads its top only,
+   the section below pads its bottom only, so stacked sections
+   don't double up their gap.
+   ============================================================ */
+.page-intro {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 0.5rem;
+  text-align: center;
+}
+
+.page-intro h1, .page-intro h2 {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-intro p {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+.page-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+}
+
+
+/* ============================================================
+   7. HOME PAGE
+   ============================================================ */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.75rem;
+  box-shadow: 0 6px 20px rgba(31, 23, 18, 0.1);
+  border-top: 4px solid var(--color-gold);
+}
+
+.book-card.accent-burgundy {
+  border-top-color: var(--color-burgundy);
+}
+
+.book-card.accent-roots {
+  border-top-color: var(--color-roots);
+}
+
+.book-status {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-ink);
+  background-color: var(--color-parchment-dim);
+  border-radius: 12px;
+  padding: 0.2rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.book-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.book-card p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.about-teaser {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 2rem 4rem;
+}
+
+.about-teaser h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-teaser p {
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+
+/* ============================================================
+   8. BOOK DETAIL PAGES (Blood Memory & Roots Remember)
+   ============================================================ */
+.book-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 1rem;
+  text-align: center;
+}
+
+.book-intro h1 {
+  font-size: 2.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.book-intro .book-genre {
+  color: var(--color-muted);
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.book-cover-placeholder {
+  width: 220px;
+  height: 320px;
+  margin: 0 auto 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-parchment-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  box-shadow: 0 8px 24px rgba(31, 23, 18, 0.12);
+}
+
+.book-cover-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blurb-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+}
+
+.blurb-section p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.blurb-hooks p {
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.tropes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+}
+
+.trope-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.9rem;
+  border-radius: 14px;
+  background-color: var(--color-parchment-dim);
+  color: var(--color-ink);
+}
+
+.book-cta {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+
+/* ============================================================
+   9. UPDATES PAGE
+   ============================================================ */
+.updates-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.update-entry {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 4px 14px rgba(31, 23, 18, 0.08);
+  border-left: 3px solid var(--color-gold);
+}
+
+.update-date {
+  color: var(--color-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.update-entry h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.update-entry p {
+  color: var(--color-ink);
+  font-size: 0.95rem;
+}
+
+
+/* ============================================================
+   10. ABOUT PAGE
+   ============================================================ */
+.bio-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 2rem 3rem;
+}
+
+.bio-section p {
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+
+/* ============================================================
+   11. CONTACT PAGE
+   ============================================================ */
+.contact-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2.25rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(31, 23, 18, 0.1);
+}
+
+.contact-card p {
+  margin-bottom: 1rem;
+  color: var(--color-ink);
+}
+
+
+/* ============================================================
+   12. MOBILE / RESPONSIVE
+   ============================================================ */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    order: 3;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    margin: 0.15rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+    order: 2;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+}
