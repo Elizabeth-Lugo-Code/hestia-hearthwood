@@ -487,6 +487,23 @@ footer {
   color: var(--color-ink);
 }
 
+.copy-email-btn {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--color-gold);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  margin: 1rem auto 0;
+}
+
+.copy-email-btn:hover {
+  color: var(--color-burgundy);
+}
+
 
 /* ============================================================
    12. MOBILE / RESPONSIVE
